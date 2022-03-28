@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css">
+</head>
+ 
+<body>
+  <table>
+    <form name="form1">
+      <tr>
+        <td colspan="4">
+          <input class= "display" type="text" name="info" value="0" size= 16>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="7" onclick="InputNum(this.value)"></td>
+        <td><input type="button" value="8" onclick="InputNum(this.value)"></td>
+        <td><input type="button" value="9" onclick="InputNum(this.value)"></td>
+        <td><input type="button" value="/" onclick="Calc('/')" class="operator"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onclick="InputNum(this.value)"></td>
+        <td><input type="button" value="5" onclick="InputNum(this.value)"></td>
+        <td><input type="button" value="6" onclick="InputNum(this.value)"></td>
+        <td><input type="button" value="×" onclick="Calc('*')" class="operator"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="1" onclick="InputNum(this.value)"></td>
+        <td><input type="button" value="2" onclick="InputNum(this.value)"></td>
+        <td><input type="button" value="3" onclick="InputNum(this.value)"></td>
+        <td><input type="button" value="－" onclick="Calc('-')" class="operator"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="0"  onclick="InputNum(this.value)"></td>
+        <td><input type="button" value="AC" onclick="Init()" class="all-clear"></td>
+        <td><input type="button" value="＝" onclick="Calc('=')" class="equal"></td>
+        <td><input type="button" value="＋" onclick="Calc('+')" class="operator"></td>
+      </tr>
+    </form>
+  </table>
+  <script src="main.js"></script>
+</body>
+</html>
